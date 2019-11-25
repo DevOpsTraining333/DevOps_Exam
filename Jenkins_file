@@ -6,7 +6,7 @@ pipeline {
         stage('Install Shellcheck') {
             steps {
                 sh 'sudo yum install -y epel-release'
-                sh 'sudo yum install -y shellcheck'  
+                sh 'sudo yum install -y ShellCheck'  
             }
         }
         stage('Install nodejs and supervisor') {
