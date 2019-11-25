@@ -24,5 +24,6 @@ Vagrant.configure("2") do |config|
           vb.memory = "1024"
         end
         nodejs.vm.synced_folder ".", "/var/lib"
+        nodejs.vm.provision "shell", path:"./nodejs_installation.sh"
       end
 end
