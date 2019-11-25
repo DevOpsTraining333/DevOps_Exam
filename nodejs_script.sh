@@ -1,9 +1,7 @@
 #!/bin/bash 
 
-sudo yum install -y gcc-c++ make nc -y
-sudo yum install epel-release
-sudo yum install nodejs
-sudo yum install npm
+wget  -P /var/lib/jenkins https://nodejs.org/download/
 
-sudo npm install supervisor -g
-sudo supervisor index.js &
+mkdir -p /var/lib/jenkins/nodejs
+tar -zxvf node-v8.4.0-linux-x64.tar.gz -C /var/lib/jenkins/nodejs
+export PATH=$PATH:/var/lib/jenkins/nodejs/node-v8.4.0-linux-x64/bin
