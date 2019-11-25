@@ -73,3 +73,7 @@ Now copy the content of /var/lib/jenkins/.ssh/id_rsa from the nodejs client to t
 
 Set credentials to jenkins and Save.
 
+#### 3. Create pipeline
+
+From Jenkins_file from the repository, using index.js
+
