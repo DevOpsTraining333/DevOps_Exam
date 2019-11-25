@@ -11,4 +11,17 @@ Vagrant.configure("2") do |config|
         vb.memory = "1024"
       end
     end
+
+    config.vm.define "nodejs" do |nodejs|
+        #nodejs.vm.hostname = 'jenkins-student-slave'
+        nodejs.vm.box = "geerlingguy/centos7"
+        nodejs.vm.network "private_network", ip: "192.168.56.112"
+        #nodejs.vm.synced_folder ".", "/devops_exam"
+        nodejs.vm.provider "virtualbox" do |vb|
+          vb.name = "jenkins-student-slave"
+          vb.gui = false
+          vb.memory = "1024"
+        end
+        nodejs.vm.synced_folder ".", "/var/lib"
+      end
 end
