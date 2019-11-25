@@ -16,7 +16,7 @@ pipeline {
         }
         stage('checking my script') {
             steps {
-                sh 'sudo shellcheck nodejs_install/nodejs_script.sh' 
+                sh 'sudo shellcheck /nodejs_install/nodejs_script.sh' 
             }
         }
     }
