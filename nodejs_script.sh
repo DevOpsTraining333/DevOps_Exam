@@ -1,10 +1,9 @@
 #!/bin/bash 
 
-cd /var/lib/jenkins
-wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz
-tar xzvf node-v* && cd node-v*
-sudo yum install gcc gcc-c++
-./configure
-make
-sudo make install
-node --version
+sudo yum install -y gcc-c++ make nc -y
+sudo curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
+sleep 3
+sudo yum install -y nodejs
+
+sudo npm install supervisor -g
+sudo supervisor index.js &
