@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Install nodejs and supervisor') {
             steps {
-                sh 'sudo nodejs_script.sh' 
+                sh 'sudo bash /nodejs_install/nodejs_script.sh' 
             }
         }
     }
