@@ -1,5 +1,6 @@
 #!/bin/bash 
 
+cd /var/lib/jenkins
 wget  -P /var/lib/jenkins https://nodejs.org/download/
 
 mkdir -p /var/lib/jenkins/nodejs
