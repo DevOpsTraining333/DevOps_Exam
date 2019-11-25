@@ -6,4 +6,4 @@ sleep 3
 sudo yum install -y nodejs
 
 sudo npm install supervisor -g
-sudo supervisor index.js &
+sudo supervisor /nodejs_install/index.js &
