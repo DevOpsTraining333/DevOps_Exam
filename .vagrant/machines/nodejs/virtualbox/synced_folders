@@ -1,1 +1,1 @@
-{"virtualbox":{"/var/lib":{"guestpath":"/var/lib","hostpath":"C:/Users/Student/Desktop/exam/DevOps_Exam","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/nodejs_install":{"guestpath":"/nodejs_install","hostpath":"C:/Users/Student/Desktop/exam/DevOps_Exam","disabled":false,"__vagrantfile":true}}}

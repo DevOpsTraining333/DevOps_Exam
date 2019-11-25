@@ -1,0 +1,13 @@
+pipeline {
+    agent { 
+        label 'nodejs' 
+    }
+    stages {
+        stage('Install Shellcheck') {
+            steps {
+                sh 'sudo yum install -y epel-release'
+                sh 'sudo yum install -y ShellCheck'  
+            }
+        }
+    }
+}

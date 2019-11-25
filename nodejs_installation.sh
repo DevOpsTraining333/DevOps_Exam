@@ -18,3 +18,5 @@ useradd -d /var/lib/jenkins jenkins
 echo "000000" | passwd --stdin jenkins
 
 echo "jenkins  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/jenkins
+
+
