@@ -21,7 +21,8 @@ pipeline {
         }
         stage('Run nodejs') {
             steps {
-                sh 'sudo node /nodejs_install/index.js' 
+                sh '#sudo node /nodejs_install/index.js' 
+                sh 'node --version'
             }
         }
     }
