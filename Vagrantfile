@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
         vb.gui = false
         vb.memory = "1024"
       end
+      jenkins.vm.provision "shell", path:"./jenkins_installation.sh"
     end
 
     config.vm.define "nodejs" do |nodejs|
